@@ -1,0 +1,21 @@
+Input: a file with following content: username groupname userid homepath
+Output: a new file grouped by groupname
+example:
+input:
+'''
+user1 group1 001 /usr/bin/
+user2 group3 002 /usr/bin/
+user3 group2 003 /usr/bin/
+user4 group1 004 /usr/bin/
+user5 group2 005 /usr/bin/
+'''
+output:
+'''
+user1 group1 001 /usr/bin/
+user4 group1 004 /usr/bin/
+user3 group2 003 /usr/bin/
+user5 group2 005 /usr/bin/
+user2 group3 002 /usr/bin/
+'''
+ 
+Note: there's a command line to do this "sort -t' ' -k2 filename", but we want you to do this in programming languages
