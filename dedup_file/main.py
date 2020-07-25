@@ -1,3 +1,15 @@
+'''
+idea:
+1) create empty list
+2) read each line and check if it's in the list 
+      yes, drop it
+      no, append it to a list
+3) output the new file
+
+Complexity: O(N^2) where N is # of lines
+'''
+
+
 from absl import app
 
 def main(argv):
