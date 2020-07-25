@@ -1,3 +1,14 @@
+'''
+Idea:
+1) read the file
+2) read each line and split words into a list
+3) combine all lists into a bigger list and sort the sublists by 2nd item
+4) write to a new file 
+
+Complexity: O(NlogN) where N is # of lines
+'''
+
+
 from absl import app
 
 def main(argv):
