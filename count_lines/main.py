@@ -1,3 +1,14 @@
+'''
+Idea:
+1) read the file line by line
+2) check for empty space
+3) check for comment line; if it starts with '^' and ends with '$' and if the amount of '^' and '$' are equal
+4) if not empty nor comment, counter++
+
+Complexity: O(NxM) where N is # of lines and M is # of characters in a line
+'''
+
+
 from absl import app
 
 def main(argv):
