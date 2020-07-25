@@ -1,4 +1,4 @@
-'''
+"""
 idea:
 1) create empty list
 2) read each line and check if it's in the list 
@@ -7,7 +7,7 @@ idea:
 3) output the new file
 
 Complexity: O(N^2) where N is # of lines
-'''
+"""
 
 
 from absl import app
