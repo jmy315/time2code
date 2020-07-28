@@ -1,4 +1,4 @@
-'''
+"""
 Idea:
 1) read the file
 2) read each line and split words into a list
@@ -6,7 +6,7 @@ Idea:
 4) write to a new file 
 
 Complexity: O(NlogN) where N is # of lines
-'''
+"""
 
 
 from absl import app
