@@ -4,7 +4,7 @@ idea:
 2) reformat the date and store (date, filename) into a list
 3) sort the list by date and print them
 
-complexity: O() where N is 
+complexity: O(NlogN) where N is number of lines 
 """
 from absl import app
 from datetime import datetime
