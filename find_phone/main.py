@@ -4,7 +4,7 @@ idea:
 2) read each line and search with pattern
 3) print out valid numbers
 
-complexity: O() where N is
+complexity: O(N) where N is number of lines
 """
 
 from absl import app
