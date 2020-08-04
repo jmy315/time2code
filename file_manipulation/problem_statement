@@ -1,0 +1,10 @@
+input: a directory
+Under the directory, there are four types of file
+directories, .txt, .html and .jpg
+ 
+output: need to perform the following
+1) move all .jpg files into a directory named 'pictures' 
+2) rename all .html files to .htm files
+3) concatenate all .txt files (sorted by their names alphabetically) into a single file named 'stuff.txt'
+ 
+Note: create your own test files and directories
