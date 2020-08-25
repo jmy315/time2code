@@ -1,0 +1,6 @@
+12:03:24 08/13/2020 Set id:1239 name:orange
+12:05:24 08/13/2020 Set id:1236 price:11
+12:05:24 08/13/2020 Get id:1239 name:orange
+12:03:24 08/14/2020 Get id:1234 name:grape
+12:05:24 08/14/2020 Set id:1237 price:22
+12:05:24 08/14/2020 Add id:1240 name:orange price:12 location:wa
