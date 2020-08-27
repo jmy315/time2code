@@ -1,0 +1,5 @@
+input: a file and a number N 
+ 
+output: print out the last N lines of the file
+ 
+Note: watch out for edge cases
