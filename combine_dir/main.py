@@ -31,8 +31,8 @@ def combine_dirs(d1, d2):
             if sub_dir_file in dir_dic:
                 shutil.move(full_dir_file,  dir_dic[sub_dir_file] + '_2')
             else:
-                os.makedirs('dir1/' + sub_dir, exist_ok=True)
-                shutil.move(full_dir_file, 'dir1/' + sub_dir_file)
+                os.makedirs(d1 + '/' + sub_dir, exist_ok=True)
+                shutil.move(full_dir_file, d1 + '/' + sub_dir_file)
     os.rename(d1, 'new_dir')
     shutil.rmtree(d2, ignore_errors=True)
     return
