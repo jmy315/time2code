@@ -8,6 +8,7 @@ complexity: O(NlogN) where N is number of lines
 """
 
 from absl import app
+from datetime import datetime
 
 def main(argv):
     reasonable_cost(argv[1])
@@ -24,7 +25,7 @@ def reasonable_cost(file):
             cost = float(words[2][1:])
             if cost >= 20 and cost <= 50 and words[3] == 'Yes':
                 want.append(words)
-    sorted_want = sorted(want, key=lambda i: i[0], reverse=True)
+    sorted_want = sorted(want, key=lambda i:datetime.strptime(i[0], '%m/%d/%y'))
     print(header, end='')
     for line in sorted_want:
         print(' '.join(line))
