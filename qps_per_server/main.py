@@ -5,7 +5,7 @@ idea:
 3) get len of set to get total seconds
 4) calcult qps per server and output
 
-complexity: O(N) where N is number lines
+complexity: O(NlogN) where N is number lines
 """
 
 from absl import app
