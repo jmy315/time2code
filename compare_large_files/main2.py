@@ -9,6 +9,7 @@ complexity:O(N) where is the number of lines of the larger file
 
 import os
 import sys
+from itertools import zip_longest
 
 def file_gen(file):
     return((line for line in open(file, 'r')))
@@ -20,7 +21,7 @@ def comp(file1, file2):
         return False
     gen1 = file_gen(file1)
     gen2 = file_gen(file2)
-    for a, b in zip(gen1, gen2):
+    for a, b in zip_longest(gen1, gen2):
         if a != b:
             return False
     return True
