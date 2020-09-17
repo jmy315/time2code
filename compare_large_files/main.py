@@ -18,7 +18,6 @@ def comp(file1, file2):
     size2 = os.stat(file2).st_size
     if size1 != size2:
         return False
-    print("here")
     gen1 = file_gen(file1)
     gen2 = file_gen(file2)
     for a, b in zip(gen1, gen2):
