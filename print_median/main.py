@@ -24,9 +24,7 @@ def print_median(file):
             temp = f.readline()
         if n % 2 == 0:
             print(temp, end='')
-            print(f.readline(), end='')
-        else:
-            print(f.readline(), end='')
+        print(f.readline(), end='')
     return
 
 print_median(sys.argv[1])
