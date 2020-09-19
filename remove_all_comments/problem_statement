@@ -1,0 +1,26 @@
+Input: a python file my_code.py:
+------------------------------------------
+"""
+This is a test code
+ 
+"""
+def main():
+    # This is a comment
+    print('Hello, world')
+    return
+ 
+# end of file
+------------------------------------------
+ 
+ 
+Please implement a method that removes all the comments and save to my_new_code.py:
+1) lines starts with #
+2) blocks between """
+ 
+Output:
+------------------------------------------
+def main():
+    print('Hello, world')
+    return
+ 
+------------------------------------------
