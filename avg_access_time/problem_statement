@@ -1,0 +1,15 @@
+Input: you are given a log file about file access 
+log format: date time userid fileid call
+example:
+09:30:01 10-03-2020 98003 56dccecacba54a3 open
+09:30:22 10-03-2020 98022 16dccecacba54a1 open
+09:35:04 10-03-2020 98003 56dccecacba54a3 close
+10:35:34 10-03-2020 98022 16dccecacba54a1 close
+11:30:01 10-03-2020 98004 56dccecacba54a3 open
+11:35:08 10-03-2020 98004 56dccecacba54a3 close
+ 
+ 
+Output: print out the average access time (close_time - open_time) for each file (assume there's only one user access a file at once) (output should be sorted by time shortest to longest)
+example:
+56dccecacba54a3 00:05:05
+16dccecacba54a1 01:05:12
