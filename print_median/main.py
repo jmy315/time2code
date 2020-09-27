@@ -12,13 +12,11 @@ import sys
 def print_median(file):
     n = 0
     with open(file, 'r') as f:
-        while True:
-            line = f.readline()
-            if not line:
-                break
-            n += 1
-
-    with open(file, 'r') as f:
+        for n, _ in enumerate(f):
+            pass
+        # increase n by 1 to match the total lines of file
+        n += 1
+        f.seek(0)
         temp = ''
         for i in range(int(n/2)):
             temp = f.readline()
