@@ -1,0 +1,11 @@
+binary created_at status
+b1 10:05:04 10/15/2020 running
+b2 14:05:06 10/15/2020 queued
+b3 10:06:04 10/15/2020 running
+b4 11:07:24 10/15/2020 succeeded
+b5 10:10:11 10/15/2020 failed
+b6 13:05:00 10/15/2020 succeeded
+b7 11:05:40 10/15/2020 queued
+b8 12:05:04 10/15/2020 running
+b9 12:04:04 10/15/2020 queued
+b10 13:05:24 10/15/2020 failed
