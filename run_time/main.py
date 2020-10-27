@@ -25,12 +25,12 @@ def run_time(filename):
             if act == 'start':
                 pt_map[pid] = [timedelta(0), time_obj]
             if act == 'pause':
-                pt_map[pid] = [time_obj - pt_map[pid][1], time_obj]
+                pt_map[pid] = [pt_map[pid][0] + time_obj - pt_map[pid][1], time_obj]
             if act == 'resume':
                 pt_map[pid] = [pt_map[pid][0], time_obj]
             if act == 'exit':
                 exited_p.append(pid)
-                pt_map[pid] = [time_obj - pt_map[pid][1], time_obj]
+                pt_map[pid] = [pt_map[pid][0] + time_obj - pt_map[pid][1], time_obj]
         for pid in exited_p:
             print('{}: {}'.format(pid, pt_map[pid][0]))
     return
