@@ -1,0 +1,1 @@
+/bin/sh: his-command-does-not-exist: command not found
