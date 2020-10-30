@@ -1,0 +1,4 @@
+Given an array of integers greater than zero, find if there is a way to split the array in two(without reordering any elements) such that the sum of the left and right are most closed to each other
+example: [2,7,9,4,6,1]
+output: [2,7,9], [4,6,1] 
+explanation: sum of left: 16, sum of right: 11, they are 16-11=5 away.
