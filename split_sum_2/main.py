@@ -19,8 +19,10 @@ def split_sum_2(array):
         right_sum -= num
         if min_diff > abs(left_sum - right_sum):
             min_diff = abs(left_sum - right_sum)
+        else:
             min_index = i
-    print(array[:min_index+1], array[min_index+1:])
+            break
+    print(array[:min_index], array[min_index:])
 
 
 split_sum_2([2,7,9,4,6,1])
